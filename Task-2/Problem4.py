@@ -7,13 +7,13 @@ try:
 
     # Command dictionary
     commands_functions = {
-        "insert": lambda command, index, elem: command.insert(index, elem),
-        "print": lambda command: print(command),
-        "remove": lambda command, elem: command.remove(elem),
-        "append": lambda command, elem: command.append(elem),
-        "sort": lambda command: command.sort(),
-        "pop": lambda command: command.pop(),
-        "reverse": lambda command: command.reverse()
+        "insert": lambda my_list, index, elem: my_list.insert(index, elem),
+        "print": lambda my_list: print(my_list),
+        "remove": lambda my_list, elem: my_list.remove(elem),
+        "append": lambda my_list, elem: my_list.append(elem),
+        "sort": lambda my_list: my_list.sort(),
+        "pop": lambda my_list: my_list.pop(),
+        "reverse": lambda my_list: my_list.reverse()
     }
 
     # Take user command input and arbitrary arguments
