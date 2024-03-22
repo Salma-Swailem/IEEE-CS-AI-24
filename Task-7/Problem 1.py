@@ -2,11 +2,11 @@ def probability_distribution(data):
     total_count = len(data)
     distribution = {}
 
-    for value in data:
-        if value in distribution:
-            distribution[value] += 1
+    for key in data:
+        if key in distribution:
+            distribution[key] += 1
         else:
-            distribution[value] = 1
+            distribution[key] = 1
 
     for key, value in distribution.items():
         distribution[key] = value / total_count
